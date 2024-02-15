@@ -108,6 +108,11 @@ a{
   color: white;
 
   cursor: pointer;
+  
+  transition: background 1s ease;
+}
+.btn:hover{
+  background-color: red;
 }
 
 
