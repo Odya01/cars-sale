@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Ubuntu", sans-serif;
+}
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.main{
+  background: #141414;
+}
+
+
+/* Header */
+.header{
+  background-color: #080808;
+}
+.header__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo{
+  display: flex;
+  align-items: end;
+}
+.header__nav{
+  display: flex;
+  align-items: center;
+}
+.link{
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+
+  cursor: pointer;
+}
+.link::after{
+  content:'';
+  display:block;
+  width:0;
+  height:2px;
+  background: red;
+  transition: width .3s ease;
+}
+.link:focus::after,
+.link:hover::after{
+  width:100%;
+  transition: width .3s ease;
+}
+.header__link:not(:last-child){
+  margin-right: 50px;
+}
+.tel__link{
+  display: flex;
+}
+.header__tel{
+  padding-left: 35px;
+  background-image: url(../images/tel.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/* main */
+.section__main{
+  height: 900px;
+  background-image: url(../images/main-car.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.container__main{
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.main__header{
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-size: 70px;
+  font-weight: 500;
+  color: white;
+}
+.btn{
+  width: 350px;
+  padding: 10px 0;
+  font-size: 24px;
+
+  border: 2px solid red;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+
+  cursor: pointer;
+}
+
+
+/* advantage */
+.advantage{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advantage__content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.advantage__item{
+  display: flex;
+  padding-left: 10px;
+  width: 500px;
+
+  color: white;
+  font-size: 22px;
+  text-align: center;
+
+  border-radius: 5px;
+  border-left: 5px solid red;
+}
+.advantage__item:nth-child(-n+2){
+  margin-bottom: 50px;
+}
+
+
+/* stages */
+.stages{
+  height: 900px;
+  background-image: url(../images/car-sss.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.stages__container{
+  padding-top: 120px;
+}
+.stages__header{
+  margin: 0 0 50px 0;
+  padding: 0;
+
+  font-size: 50px;
+  text-align: right;
+  color: white;
+}
+.stages__content{
+  display: flex;
+  flex-direction: column;
+}
+.stages__item{
+  max-width: 680px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+.stages__item:not(:last-child){
+  margin-bottom: 30px;
+}
+.stages__number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid red;
+  border-radius: 50%;
+
+  margin-right: 50px;
+  color: white;
+  font-size: 35px;
+}
+.stages__text{
+  width: 400px;
+  margin: 0;
+
+  font-size: 22px;
+  color: white;
+}
+
+
+/* contacts */
+.contacts{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.contacts__header{
+  margin: 0 0 50px 0;
+  padding: 0;
+
+  font-size: 50px;
+  color: white;
+}
+.contacts__text{
+  margin: 0;
+  padding: 0;
+
+  font-size: 22px;
+  color: white;
+}
