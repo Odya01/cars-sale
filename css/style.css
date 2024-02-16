@@ -21,6 +21,7 @@ a{
 }
 .main{
   background: #141414;
+  margin-bottom: -18px;
 }
 
 
@@ -133,7 +134,7 @@ a{
   width: 500px;
 
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
 
   border-radius: 5px;
@@ -202,8 +203,7 @@ a{
 
 /* contacts */
 .contacts{
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .contacts__header{
   margin: 0 0 50px 0;
@@ -217,5 +217,43 @@ a{
   padding: 0;
 
   font-size: 22px;
+  color: white;
+}
+.contacts__discription{
+  margin-bottom: 120px;
+}
+.contacts__map{
+  display: flex;
+}
+.map__header{
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  font-size: 50px;
+  color: white;
+}
+.map__text{
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+}
+.map__discription{
+  margin-left: 120px;
+}
+
+
+/* footer */
+.footer{
+  padding: 50px 0;
+  background-color: black;
+}
+.footer__text{
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
   color: white;
 }

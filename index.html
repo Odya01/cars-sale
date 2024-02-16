@@ -11,6 +11,31 @@
   <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
 
+
+  <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <script>
+        initMap();
+
+        async function initMap() {
+            await ymaps3.ready;
+
+            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+            const map = new YMap(
+                document.getElementById('map'),
+                {
+                    location: {
+                        center: [37.588144, 55.733842],
+                        zoom: 10
+                    }
+                }
+            );
+
+            map.addChild(new YMapDefaultSchemeLayer());
+        }
+    </script>
+
+
   <title>Car Price</title>
 
 </head>
@@ -33,7 +58,6 @@
         <div class="link">
           +7 (969) 999-99-99
         </div>
-        
       </a>
     </div>
   </header>
@@ -105,20 +129,45 @@
 
    <section class="contacts">
     <div class="container">
-      <h2 class="contacts__header">Наши контакты</h2>
-      <p class="contacts__text">Не упустите шанс взять под контроль свою мечту об автомобиле из Европы. Оставьте свои контактные данные прямо сейчас, и мы сделаем все возможное, чтобы помочь вам осуществить эту мечту за месяц.</p>
-      <button class="btn">
-        Узнать подробнее
-      </button>
+      <div class="contacts__discription">
+        <h2 class="contacts__header">Наши контакты</h2>
+        <p class="contacts__text">Не упустите шанс взять под контроль свою мечту об автомобиле из Европы. Оставьте свои контактные данные прямо сейчас, и мы сделаем все возможное, чтобы помочь вам осуществить эту мечту за месяц.</p>
+        <button class="btn">
+          Узнать подробнее
+        </button>
+      </div>
+
+      <div class="contacts__map">
+        <div id="map" style="width: 700px; height: 550px"></div>
+
+        <div class="map__discription">
+          <h2 class="map__header">Мы находимся тут</h2>
+          <p class="map__text">Улица Землячки, дом 40</p>
+          <a href="tel:+79699999999" class="tel__link map__link">
+            <div class="link">
+              +7 (969) 999-99-99
+            </div>
+          </a>
+        </div>
+      </div>
+      
     </div>
    </section> 
 
   </main>
 
   <footer class="footer">
-
+    <div class="container">
+      <p class="footer__text">
+        Предлагаемые розничные цены включают максимальную выгоду при покупке автомобиля в кредит, а также в рамках программ Trade-in и Утилизация. Акция действительна при наличии страхования жизни и защиты от угона. Для получения подробной информации о наличии и стоимости автомобилей, пожалуйста, обращайтесь к менеджерам отдела продаж.
+        Этот веб-сайт является чисто информационным и не может быть рассматриваться как публичная оферта в соответствии со статьей 437 часть 2 Гражданского кодекса Российской Федерации. Для получения более подробной информации о ценах на автомобили, пожалуйста, свяжитесь с менеджерами автосалона. Просматривая этот веб-сайт, вы даете согласие на использование файлов cookie на вашем устройстве для обеспечения более удобного и быстрого использования веб-сайта.
+        Предоставляя свои личные данные на данном сайте в любых формах, а также при звонках на указанные номера, вы даете согласие на обработку и использование своих персональных данных в интересах владельца сайта, включая рассылку SMS и электронных писем, отправку уведомлений и совершение телефонных звонков.
+      </p>
+    </div>
   </footer>
 
+  <!-- Для карты -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 
   <script src="js/script.js"></script>
 </body>
