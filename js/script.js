@@ -1,4 +1,4 @@
-// Яндекс карта
+// yandex map
 ymaps.ready(init);
 function init(){
 	var myMap = new ymaps.Map("map", {
@@ -15,3 +15,4 @@ function init(){
 
 	myMap.geoObjects.add(myPlacemark); 
 }
+// end map

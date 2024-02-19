@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- normalize css -->
+  <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Car Price</title>
+
+</head>
+<body>
+  
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo">
+        <img src="images/car-logo.svg" alt="">
+      </a>
+      <div class="header__nav">
+        <a href="index.html" class="link header__link">О нас</a>
+        <a href="" class="link header__link">Авто в наличии</a>
+        <a href="" class="link header__link">Авто под заказ</a>
+        <a href="contacts.html" class="link header__link">Контакты</a>
+      </div>
+      <a href="tel:+79699999999" class="tel__link">
+        <span class="header__tel"></span>
+        <div class="link">
+          +7 (969) 999-99-99
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container contact__container">
+      <h2 class="contacts__header">Контакты</h2>
+      <div class="contact__description">
+        <div class="contact__item">
+          <h2 class="contacts__header">г.Волгоград ул. Землячки д. 40</h2>
+
+          <p class="contact__text">Ежедневно с 10:00 до 20:00</p>
+        </div>
+
+        <div class="contact__item">
+          <a href="tel:+79699999999" class="tel__link">
+            <div class="link">
+              +7 (969) 999-99-99
+            </div>
+          </a>
+          <a href="mailto:carsauto@mail.ru" class="link">carsauto@mail.ru</a>
+        </div>
+      </div>
+
+      <div id="map" style="width: 100%; height: 400px"></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        Предлагаемые розничные цены включают максимальную выгоду при покупке автомобиля в кредит, а также в рамках программ Trade-in и Утилизация. Акция действительна при наличии страхования жизни и защиты от угона. Для получения подробной информации о наличии и стоимости автомобилей, пожалуйста, обращайтесь к менеджерам отдела продаж.
+        Этот веб-сайт является чисто информационным и не может быть рассматриваться как публичная оферта в соответствии со статьей 437 часть 2 Гражданского кодекса Российской Федерации. Для получения более подробной информации о ценах на автомобили, пожалуйста, свяжитесь с менеджерами автосалона. Просматривая этот веб-сайт, вы даете согласие на использование файлов cookie на вашем устройстве для обеспечения более удобного и быстрого использования веб-сайта.
+        Предоставляя свои личные данные на данном сайте в любых формах, а также при звонках на указанные номера, вы даете согласие на обработку и использование своих персональных данных в интересах владельца сайта, включая рассылку SMS и электронных писем, отправку уведомлений и совершение телефонных звонков.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Для карты -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
