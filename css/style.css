@@ -65,11 +65,15 @@ a{
   background: red;
   transition: width .3s ease;
 }
+.link__active.link::after{
+  width:100%;
+}
 .link:focus::after,
 .link:hover::after{
   width:100%;
   transition: width .3s ease;
 }
+
 .header__link:not(:last-child){
   margin-right: 50px;
 }
