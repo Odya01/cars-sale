@@ -218,7 +218,7 @@ a{
   padding: 120px 0;
 }
 .contacts__header{
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   padding: 0;
 
   font-size: 50px;
@@ -278,8 +278,11 @@ a{
   display: block;
   padding: 80px 0;
 }
-.contacts__header{
+.contact__header{
   margin: 0;
+  padding: 0;
+  font-size: 50px;
+  color: white;
 }
 .contact__description{
   margin: 30px 0 50px 0;
