@@ -25,6 +25,7 @@ a{
   padding: 0 15px;
 }
 .main{
+  padding-top: 60px;
   margin-bottom: -18px;
 }
 
@@ -302,4 +303,29 @@ a{
   font-weight: 400;
   font-size: 22px;
   color: white;
+}
+
+
+
+/* 3 pages - в наличии */
+.available{
+  padding: 50px 0;
+  height: 600px;
+}
+.available__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.available__header{
+  margin: 0;
+
+  font-size: 50px;
+	color: white;
+}
+.models__item{
+  height: 150px;
+  width: 150px;
+
 }
