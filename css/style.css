@@ -309,8 +309,7 @@ a{
 
 /* 3 pages - в наличии */
 .available{
-  padding: 50px 0;
-  height: 600px;
+  padding: 80px 0;
 }
 .available__container{
   display: flex;
@@ -320,12 +319,71 @@ a{
 }
 .available__header{
   margin: 0;
+  margin-bottom: 30px;
 
   font-size: 50px;
 	color: white;
 }
+.models{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.model__block{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.model__block:first-child{
+  margin-bottom: 40px;
+}
 .models__item{
-  height: 150px;
-  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  width: 150px;
+  height: 150px;
+
+  background: linear-gradient(180deg, #989797 0%, rgba(217, 217, 217, 0.093) 100%);
+  border-radius: 20px;
+
+  transition: border .4s ease;
+}
+.models__item:hover,
+.modelCar__item:hover{
+  border: 2px solid red;
+}
+.model__link{
+  display: block;
+  height: 140px;
+  width: 140px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.modelCar{
+  padding-bottom: 30px;
+}
+.modelCar__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.modelCar__item{
+  width: 380px;
+  height: 250px;
+
+  margin-bottom: 30px;
+
+  background: linear-gradient(180deg, #989797 0%, rgba(217, 217, 217, 0.093) 100%);
+  border-radius: 20px;
+
+  transition: border .4s ease;
 }
