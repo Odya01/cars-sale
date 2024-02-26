@@ -55,39 +55,3 @@ modelParent.addEventListener('click', (event) =>{
 // end
 
 
-// modal contact
-const modalTrigger = document.querySelectorAll('[data-modal]'),
-      modal = document.querySelector('.modal'),
-      modalCloseBtn = document.querySelector('[data-close]');
-
-
-  function openModel(){  
-		console.log('open модалки')
-    // modal.classList.toggle('show');
-    // document.body.style.overflow = 'hidden';
-  }
-
-  modalTrigger.forEach(btn => {
-      btn.addEventListener('click', openModel);
-  });
-  
-  function closeModal(){
-    modal.classList.toggle('show');
-    document.body.style.overflow = '';
-  }
-
-  modalCloseBtn.addEventListener('click', closeModal);
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal){
-      closeModal();
-    }
-  });
-
-  // bnt 'esc' close modal
-  document.addEventListener('keydown', () => {
-    if (e.code === "Escape" && modal.classList.contains('show')){
-      closeModal();
-    }
-  });
-
