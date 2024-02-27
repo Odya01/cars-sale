@@ -315,7 +315,7 @@ a{
 
 /* 3 pages - в наличии */
 .available{
-  padding: 80px 0;
+  padding: 80px 0 50px 0;
 }
 .available__container{
   display: flex;
@@ -359,7 +359,7 @@ a{
   margin-right: 65px;
 }
 .models__item:hover,
-.modelCar__item:hover{
+.modelCar__link:hover{
   border: 2px solid red;
 }
 .model__link{
@@ -382,8 +382,17 @@ a{
 }
 .modelCar__item{
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modelCar__title{
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: white;
+  border-bottom: 1px solid red;
+}
+.modelCar__link{
   width: 600px;
   height: 300px;
 
@@ -397,9 +406,7 @@ a{
 
   transition: border .4s ease;
 }
-.modelCar__item span{
-  margin: 20px 0 0 20px;
-  font-size: 20px;
-  color: white;
-  border-bottom: 2px solid red;
-}
+
+
+
+/*  */
