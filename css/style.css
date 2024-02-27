@@ -41,6 +41,7 @@ a{
   position: fixed;
   width: 100%;
   background-color: #080808;
+  z-index: 2;
 
   box-shadow: 0px 8px 10px 0px #080808;
 }
@@ -409,4 +410,79 @@ a{
 
 
 
-/*  */
+/* Card car */
+.cardCar{
+  padding: 50px 0;
+}
+.cardCar__header{
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  color: white;
+}
+.cardCar__item{
+  display: flex;
+  justify-content: space-between;
+}
+.cardCar__title-block{
+  padding-bottom: 50px;
+  border-bottom: 1px solid red;
+}
+.swiper{
+  width: 900px;
+  height: 500px;
+}
+.swiper-slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cardCar__price{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  padding: 35px 25px;
+
+  background: linear-gradient(180deg, #2f2f2f 0%, rgba(193, 193, 193, 0.248) 100%);
+  border-radius: 10px;
+}
+.cardCar__price-block{
+  display: flex;
+  flex-direction: column;
+}
+.price__text{
+  font-size: 20px;
+  color: white;
+}
+.price__text span{
+  color: red;
+}
+.price__text:not(:last-child){
+  margin-bottom: 5px;
+}
+.price__text:first-child{
+  font-size: 30px;
+}
+.cardCar__price .btn{
+  width: auto;
+  padding: 10px;
+}
+.cardCar__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardCar__description{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.cardCar__description p{
+  margin: 0;
+
+  font-size: 15px;
+  color: white;
+}

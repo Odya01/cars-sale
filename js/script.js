@@ -23,6 +23,7 @@ function init(){
 const modelParent = document.querySelector('.models');
 const linkModel = document.querySelectorAll('.model__link');
 const modelContent = document.querySelectorAll('.modelCar__content');
+const modelsItem = document.querySelectorAll('.models__item');
 
 function hideTabContent(){
 	modelContent.forEach(item => {
@@ -44,7 +45,6 @@ modelParent.addEventListener('click', (event) =>{
 	if (target && target.classList.contains('model__link')) {
 		linkModel.forEach((item, i)=>{
 			if (target == item){
-				console.log(i);
 				hideTabContent();
 				showTabContent(i);
 			}
