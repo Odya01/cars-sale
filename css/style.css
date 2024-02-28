@@ -427,6 +427,7 @@ a{
 }
 .cardCar__title-block{
   padding-bottom: 50px;
+  margin-bottom: 10px;
   border-bottom: 1px solid red;
 }
 .swiper{
@@ -473,6 +474,9 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cardCar__btn .btn{
+  padding: 10px 20px;
 }
 
 .cardCar__description{
