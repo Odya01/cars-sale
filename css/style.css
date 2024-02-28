@@ -490,3 +490,13 @@ a{
   font-size: 15px;
   color: white;
 }
+.cardCar__description div{
+  display: flex;
+  align-items: center;
+
+  font-size: 15px;
+  color: white;
+}
+.cardCar__description div:first-child{
+  margin-right: 100px;
+}
