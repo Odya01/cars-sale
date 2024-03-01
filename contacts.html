@@ -28,9 +28,9 @@
         <a href="carOrder.html" class="link header__link">Авто под заказ</a>
         <a href="contacts.html" class="link header__link link__active">Контакты</a>
       </div>
-      <a href="tel:+79699999999" class="tel__link">
+      <a class="tel__link">
         <span class="header__tel"></span>
-        <div class="link">
+        <div class="link open-popup">
           +7 (969) 999-99-99
         </div>
       </a>
@@ -38,6 +38,36 @@
   </header>
 
   <main class="main">
+
+    <section>
+      
+      <div class="popup__bg"> 
+        <form class="popup">
+          <svg class="close-popup" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Close_LG"> <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">
+                    Ваше имя
+                </div>
+            </label>
+            <label>
+                <input type="tel" name="tel">
+                <div class="label__text">
+                    Ваш телефон
+                </div>
+            </label>
+            <label>
+                <input type="email" name="email">
+                <div class="label__text">
+                    Ваша почта
+                </div>
+            </label>
+            <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>  
+
+    </section>
+
     <div class="container contact__container">
       <h2 class="contact__header">Контакты</h2>
       <div class="contact__description">
