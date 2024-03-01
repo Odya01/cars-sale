@@ -30,7 +30,7 @@
       </div>
       <a href="tel:+79699999999" class="tel__link">
         <span class="header__tel"></span>
-        <div class="link">
+        <div class="link open-popup">
           +7 (969) 999-99-99
         </div>
       </a>
@@ -42,11 +42,41 @@
     <section class="section__main">
       <div class="container container__main">
         <h1 class="main__header">Заводи будущее с нами <br>Электромобили в наличии и под заказ</h1>
-        <button class="btn" data-modal>
+        <button class="btn open-popup">
           Узнать подробнее
         </button>
       </div>
       
+    </section>
+
+
+    <section>
+      
+      <div class="popup__bg"> 
+        <form class="popup">
+          <svg class="close-popup" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Close_LG"> <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">
+                    Ваше имя
+                </div>
+            </label>
+            <label>
+                <input type="tel" name="tel">
+                <div class="label__text">
+                    Ваш телефон
+                </div>
+            </label>
+            <label>
+                <input type="email" name="email">
+                <div class="label__text">
+                    Ваша почта
+                </div>
+            </label>
+            <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>  
+
     </section>
 
 
@@ -107,7 +137,7 @@
       <div class="contacts__discription">
         <h2 class="contacts__header">Наши контакты</h2>
         <p class="contacts__text">Не упустите шанс взять под контроль свою мечту об автомобиле из Европы. Оставьте свои контактные данные прямо сейчас, и мы сделаем все возможное, чтобы помочь вам осуществить эту мечту за месяц.</p>
-        <button class="btn" data-modal>
+        <button class="btn open-popup">
           Узнать подробнее
         </button>
       </div>
@@ -139,6 +169,11 @@
 
   <!-- Для карты -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/yandex-map.js"></script>
+
+  <script src="js/modal.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/input-tel.js"></script>
 
   <script src="js/script.js"></script>
 </body>
