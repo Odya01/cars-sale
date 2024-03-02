@@ -245,6 +245,10 @@ a{
 .contacts__map{
   display: flex;
 }
+.map{
+  width: 700px;
+  height: 550px;
+}
 .map__header{
   margin: 0;
   margin-bottom: 50px;

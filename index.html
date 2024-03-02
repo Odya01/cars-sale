@@ -10,6 +10,9 @@
   <!-- normalize css -->
   <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-1400.css">
+  <link rel="stylesheet" href="css/media-1100.css">
+
 
   <title>Car Price</title>
 
@@ -143,12 +146,15 @@
       </div>
 
       <div class="contacts__map">
-        <div id="map" style="width: 700px; height: 550px"></div>
+        <div id="map" class="map"></div>
 
         <div class="map__discription">
           <h2 class="map__header">Мы находимся тут</h2>
           <p class="map__text">Улица Землячки, дом 40</p>
-          <p class="map__text">+7 (969) 999-99-99</p>
+          <p class="map__text">
+            <span class="header__tel"></span>
+            +7 (969) 999-99-99
+          </p>
         </div>
       </div>
       

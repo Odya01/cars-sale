@@ -1,0 +1,12 @@
+@media (max-width: 1150px) {
+  .header__nav{
+    display: none;
+  }
+  .map__discription{
+    margin-left: 60px;
+  }
+  .map{
+    width: 600px;
+    height: 450px;
+  }
+}

@@ -1,0 +1,33 @@
+@media (max-width: 1350px){
+  .section__main,
+  .stages{
+    height: 750px;
+  }
+  .main__header{
+    font-size: 60px;
+  }
+  .stages__header,
+  .contacts__header,
+  .map__header{
+    font-size: 40px;
+  }
+}
+@media (max-width: 1230px) {
+  .section__main,
+  .stages{
+    height: 650px;
+  }
+  .container__main{
+    padding-top: 80px;
+  }
+  .main__header{
+    font-size: 50px;
+  }
+  .contacts__header,
+  .map__header{
+    font-size: 30px;
+  }
+  .map__text{
+    font-size: 22px;
+  }
+}
