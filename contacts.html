@@ -10,6 +10,9 @@
   <!-- normalize css -->
   <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-1400.css">
+  <link rel="stylesheet" href="css/media-1100.css">
+  <link rel="stylesheet" href="css/media-800.css">
 
   <title>Car Price</title>
 
@@ -28,13 +31,35 @@
         <a href="carOrder.html" class="link header__link">Авто под заказ</a>
         <a href="contacts.html" class="link header__link link__active">Контакты</a>
       </div>
-      <a class="tel__link">
+      <a class="tel__link header__link-tel">
         <span class="header__tel"></span>
         <div class="link open-popup">
           +7 (969) 999-99-99
         </div>
       </a>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a href="#advantage" class="link header__link menu__item">О нас</a></li>
+          <li><a href="carAvailable.html" class="link header__link menu__item">Авто в наличии</a></li>
+          <li><a href="carOrder.html" class="link header__link menu__item">Авто под заказ</a></li>
+          <li><a href="contacts.html" class="link header__link menu__item">Контакты</a></li>
+          <li style="margin-top: 50px;">
+            <div class="link open-popup menu__item">
+            <span class="header__tel"></span>
+            +7 (969) 999-99-99
+          </div></li>
+        </ul>
+      </div>
+      
     </div>
+
+    
   </header>
 
   <main class="main">

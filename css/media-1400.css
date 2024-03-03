@@ -11,6 +11,23 @@
   .map__header{
     font-size: 40px;
   }
+  .stages__container{
+    padding: 60px 0;
+  }
+  .contacts{
+    padding: 60px 0;
+  }
+  .contacts__discription{
+    margin-bottom: 60px;
+  }
+
+
+  
+}
+@media (max-width: 1300px){
+  .models__item:not(:nth-child(6n)){
+    margin-right: 40px;
+  }
 }
 @media (max-width: 1230px) {
   .section__main,

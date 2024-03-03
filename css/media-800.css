@@ -1,0 +1,42 @@
+@media (max-width: 800px){
+  .main__header{
+    font-size: 30px;
+  }
+  .section__main{
+    height: 500px;
+  }
+  .stages{
+    height: auto;
+  }
+  .advantage__item{
+    width: auto;
+  }
+  .header__link-tel{
+    display: none;
+  }
+  .footer__text{
+    font-size: 12px;
+  }
+  .footer{
+    padding: 20px 0;
+  }
+}
+@media (max-width: 650px){
+  .section__main{
+    background-position: left;
+  }
+}
+@media (max-width: 500px){
+  .container__main{
+    padding-top: 10px;
+  }
+  .stages__text{
+    width: auto;
+  }
+  .stages__content{
+    align-items: flex-start;
+  }
+  .stages__item{
+    margin-left: 10px;
+  }
+}
