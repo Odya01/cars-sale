@@ -26,6 +26,11 @@
   .contact__description{
     padding: 20px 10px;
   }
+
+  .cardCar__header{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 650px){
   .section__main{
@@ -33,6 +38,7 @@
   }
   .models__item{
     width: 47%;
+    height: 120px;
   }
   .modelCar__item{
     width: 100%;
@@ -47,6 +53,9 @@
   .model__link{
     width: 100px;
     height: 100px;
+  }
+  .swiper{
+    height: 300px;
   }
 }
 @media (max-width: 500px){

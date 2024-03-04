@@ -22,6 +22,27 @@
   }
 
 
+  .cardCar__item{
+    display: flex;
+    flex-direction: column;
+  }
+  .cardCar__price-block{
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .swiper{
+    height: 400px;
+    width: auto;
+  }
+  .cardCar__price{
+    margin-top: 20px;
+    max-width: 330px;
+  }
+  .cardCar__btn{
+    justify-content: flex-start;
+  }
+
+
   
 }
 @media (max-width: 1300px){
@@ -46,5 +67,11 @@
   }
   .map__text{
     font-size: 22px;
+  }
+  .contact__description{
+    flex-direction: column
+  }
+  .contact__item:not(:last-child){
+    margin-bottom: 20px;
   }
 }
