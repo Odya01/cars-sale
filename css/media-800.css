@@ -31,6 +31,13 @@
     font-size: 30px;
     margin-bottom: 10px;
   }
+  .cardCar__description{
+    flex-direction: column;
+  }
+  .cardCar__description div:first-child{
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 650px){
   .section__main{
