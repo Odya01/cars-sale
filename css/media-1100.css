@@ -13,6 +13,19 @@
     height: 450px;
   }
   /* странное с выбором модели */
+  .models__item:not(:nth-child(6n)){
+    margin: 0;
+  }
+  .models__item:nth-child(-n+6){
+    margin: 0;
+  }
+  .models{
+    justify-content: space-around;
+  }
+  .models__item{
+    width: 22%;
+    height: 150px;
+  }
 }
 @media (max-width: 1100px) {
   .section__main, 
@@ -35,6 +48,12 @@
   }
   .advantage__item:not(:last-child){
     margin-bottom: 50px;
+  }
+  .contact__header{
+    font-size: 40px;
+  }
+  .contact__description{
+    flex-direction: column;
   }
 }
 @media (max-width: 1000px){
@@ -73,9 +92,11 @@
   .map__discription{
     margin: 0 0 20px 0;
   }
-}
+  .models__item{
+    width: 30%;
+  }
 
-@media (max-width: 1000px){
+
   .stages{
     background-image: none;
     background-color: black;
@@ -90,3 +111,4 @@
     text-align: center;
   }
 }
+

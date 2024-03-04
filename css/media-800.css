@@ -20,15 +20,41 @@
   .footer{
     padding: 20px 0;
   }
+  .contact__header{
+    width: 300px;
+  }
+  .contact__description{
+    padding: 20px 10px;
+  }
 }
 @media (max-width: 650px){
   .section__main{
     background-position: left;
   }
+  .models__item{
+    width: 47%;
+  }
+  .modelCar__item{
+    width: 100%;
+  }
+  .modelCar__content{
+    flex-direction: column;
+  }
+  .modelCar__link{
+    width: 100%;
+    height: 300px;
+  }
+  .model__link{
+    width: 100px;
+    height: 100px;
+  }
 }
 @media (max-width: 500px){
   .container__main{
-    padding-top: 10px;
+    padding-top: 25px;
+  }
+  .main__header{
+    margin-bottom: 35px;
   }
   .stages__text{
     width: auto;
